@@ -5541,6 +5541,24 @@ html {
     font-size: 14px;
   }
 
+  /* Disable resource-heavy animations on hero page for mobile performance */
+  .hero-section .shooting-star,
+  .hero-section .shooting-star-2,
+  .hero-section .shooting-star-3,
+  .hero-section .shooting-star-4,
+  .hero-section .shooting-star-5 {
+    display: none !important;
+  }
+
+  .hero-section .cosmic-dust::before {
+    display: none !important;
+  }
+
+  /* Simplify cosmic dust - static dots only, no animation */
+  .hero-section .cosmic-dust {
+    animation: none !important;
+  }
+
   /* ========================================
      MUSIC SECTION (SIGNAL SCANNER) - MOBILE
      ======================================== */
