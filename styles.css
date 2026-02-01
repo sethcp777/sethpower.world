@@ -5542,20 +5542,17 @@ html {
   }
 
   /* Disable resource-heavy animations on hero page for mobile performance */
-  .hero-section .shooting-star,
-  .hero-section .shooting-star-2,
-  .hero-section .shooting-star-3,
-  .hero-section .shooting-star-4,
-  .hero-section .shooting-star-5 {
+  /* Hide hero page shooting stars (they're at .screen level, not inside hero-section) */
+  .screen > .shooting-star:not([class*="music"]):not([class*="bio"]):not([class*="gear"]):not([class*="contact"]) {
     display: none !important;
   }
 
-  .hero-section .cosmic-dust::before {
+  .screen > .cosmic-dust::before {
     display: none !important;
   }
 
   /* Simplify cosmic dust - static dots only, no animation */
-  .hero-section .cosmic-dust {
+  .screen > .cosmic-dust {
     animation: none !important;
   }
 
