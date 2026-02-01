@@ -5559,6 +5559,13 @@ html {
     animation: none !important;
   }
 
+  /* Hero logo - steady glow instead of pulsing */
+  .hero-logo {
+    animation: none !important;
+    filter: drop-shadow(0 0 30px rgba(245, 245, 245, 0.8))
+            drop-shadow(0 0 60px rgba(245, 245, 245, 0.5)) !important;
+  }
+
   /* ========================================
      MUSIC SECTION (SIGNAL SCANNER) - MOBILE
      ======================================== */
