@@ -45,6 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
         heroPlayBtn.innerHTML = '▶ LISTEN';
         isHeroPlaying = false;
       } else {
+        // Stop radio audio if it's playing
+        const radioAudio = document.getElementById('radio-audio');
+        const radioPlayBtn = document.getElementById('radio-play');
+        if (radioAudio && !radioAudio.paused) {
+          radioAudio.pause();
+          if (radioPlayBtn) {
+            radioPlayBtn.innerHTML = '▶ PLAY';
+            radioPlayBtn.classList.remove('playing');
+          }
+        }
+
         heroAudio.play();
         heroPlayBtn.innerHTML = '⏸ PAUSE';
         isHeroPlaying = true;
@@ -423,6 +434,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Update audio source and auto-play if station has signal
       if (station.src && radioAudio) {
+        // Stop hero audio if it's playing
+        const heroAudio = document.getElementById('hero-audio');
+        const heroPlayBtn = document.getElementById('hero-play-btn');
+        if (heroAudio && !heroAudio.paused) {
+          heroAudio.pause();
+          if (heroPlayBtn) {
+            heroPlayBtn.innerHTML = '▶ LISTEN';
+          }
+        }
+
         radioAudio.src = station.src;
         // Auto-play the new station
         radioAudio.play();
@@ -463,6 +484,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       if (radioAudio.paused) {
+        // Stop hero audio if it's playing
+        const heroAudio = document.getElementById('hero-audio');
+        const heroPlayBtn = document.getElementById('hero-play-btn');
+        if (heroAudio && !heroAudio.paused) {
+          heroAudio.pause();
+          if (heroPlayBtn) {
+            heroPlayBtn.innerHTML = '▶ LISTEN';
+          }
+        }
+
         radioAudio.play();
         this.innerHTML = '⏸ PAUSE';
         this.classList.add('playing');
