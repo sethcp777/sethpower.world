@@ -5842,14 +5842,17 @@ html {
   .monitor-screen {
     height: auto !important;
     min-height: 500px !important;
-    max-height: 80vh !important;
-    overflow-y: auto !important;
+    max-height: 75vh !important;
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    position: relative !important;
   }
 
   .form-content {
     padding: 15px 10px !important;
     max-height: none !important;
     overflow-y: visible !important;
+    min-height: 100% !important;
   }
 
   .transmission-form {
@@ -5872,13 +5875,16 @@ html {
   .field-input,
   .field-textarea {
     padding: 10px !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
   }
 
   .field-textarea {
     min-height: 120px !important;
+    resize: vertical !important;
   }
 
   .transmit-button {
