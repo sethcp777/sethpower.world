@@ -896,7 +896,7 @@
   <div id="shopify-modal-tote" class="shopify-modal-overlay">
     <div class="shopify-modal-container">
       <button onclick="document.getElementById('shopify-modal-tote').style.display='none'" class="shopify-modal-close">&times;</button>
-      <div id='product-component-1770579602210'></div>
+      <div id='product-component-1770582135406'></div>
     </div>
   </div>
 
@@ -1883,64 +1883,79 @@
     }
     function ShopifyBuyInitTote() {
       var client = ShopifyBuy.buildClient({
-        domain: 'b5f560-b5.myshopify.com',
-        storefrontAccessToken: 'a1e70dd5dc4fd2e2b4a98bda55e6c69b',
+        domain: 'a0vqpd-mp.myshopify.com',
+        storefrontAccessToken: 'e42f2bebdf1a63db3339639a36c8dbee',
       });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '10115267526938',
-          node: document.getElementById('product-component-1770579602210'),
+          node: document.getElementById('product-component-1770582135406'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
     "product": {
       "styles": {
         "product": {
           "@media (min-width: 601px)": {
-            "max-width": "calc(25% - 20px)",
-            "margin-left": "20px",
+            "max-width": "100%",
+            "margin-left": "0",
             "margin-bottom": "50px"
-          }
+          },
+          "text-align": "left"
         },
         "title": {
-          "font-size": "26px"
+          "font-size": "26px",
+          "color": "#F5F5F5"
         },
         "button": {
           "font-family": "Montserrat, sans-serif",
-          "font-size": "14px",
-          "padding-top": "15px",
-          "padding-bottom": "15px",
+          "font-size": "18px",
+          "padding-top": "17px",
+          "padding-bottom": "17px",
+          "color": "#000000",
           ":hover": {
-            "background-color": "#7bbaa7"
+            "color": "#000000",
+            "background-color": "#7bbaad"
           },
           "background-color": "#89cfc0",
           ":focus": {
-            "background-color": "#7bbaa7"
-          },
-          "border-radius": "0px"
+            "background-color": "#7bbaad"
+          }
         },
         "quantityInput": {
-          "font-size": "14px",
-          "padding-top": "15px",
-          "padding-bottom": "15px"
+          "font-size": "18px",
+          "padding-top": "17px",
+          "padding-bottom": "17px"
         },
         "price": {
-          "font-size": "18px"
+          "font-size": "18px",
+          "color": "#F5F5F5"
         },
         "compareAt": {
-          "font-size": "15.299999999999999px"
+          "font-size": "15.299999999999999px",
+          "color": "#F5F5F5"
         },
         "unitPrice": {
-          "font-size": "15.299999999999999px"
+          "font-size": "15.299999999999999px",
+          "color": "#F5F5F5"
+        },
+        "description": {
+          "color": "#D3D3D3"
         }
       },
+      "buttonDestination": "checkout",
+      "layout": "horizontal",
       "contents": {
         "img": false,
-        "title": false,
-        "price": false
+        "imgWithCarousel": true,
+        "description": true
       },
+      "width": "100%",
       "text": {
-        "button": "Add to cart"
-      }
+        "button": "Buy now"
+      },
+      "googleFonts": [
+        "Montserrat"
+      ]
     },
     "productSet": {
       "styles": {
@@ -1968,22 +1983,23 @@
         },
         "button": {
           "font-family": "Montserrat, sans-serif",
-          "font-size": "14px",
-          "padding-top": "15px",
-          "padding-bottom": "15px",
+          "font-size": "18px",
+          "padding-top": "17px",
+          "padding-bottom": "17px",
+          "color": "#000000",
           ":hover": {
-            "background-color": "#7bbaa7"
+            "color": "#000000",
+            "background-color": "#7bbaad"
           },
           "background-color": "#89cfc0",
           ":focus": {
-            "background-color": "#7bbaa7"
-          },
-          "border-radius": "0px"
+            "background-color": "#7bbaad"
+          }
         },
         "quantityInput": {
-          "font-size": "14px",
-          "padding-top": "15px",
-          "padding-bottom": "15px"
+          "font-size": "18px",
+          "padding-top": "17px",
+          "padding-bottom": "17px"
         },
         "title": {
           "font-family": "Helvetica Neue, sans-serif",
@@ -2013,6 +2029,9 @@
           "color": "#D3D3D3"
         }
       },
+      "googleFonts": [
+        "Montserrat"
+      ],
       "text": {
         "button": "Add to cart"
       }
@@ -2022,23 +2041,27 @@
       "styles": {
         "button": {
           "font-family": "Montserrat, sans-serif",
-          "font-size": "14px",
-          "padding-top": "15px",
-          "padding-bottom": "15px",
+          "font-size": "18px",
+          "padding-top": "17px",
+          "padding-bottom": "17px",
+          "color": "#000000",
           ":hover": {
-            "background-color": "#7bbaa7"
+            "color": "#000000",
+            "background-color": "#7bbaad"
           },
           "background-color": "#89cfc0",
           ":focus": {
-            "background-color": "#7bbaa7"
-          },
-          "border-radius": "0px"
+            "background-color": "#7bbaad"
+          }
         }
       },
       "text": {
         "total": "Subtotal",
         "button": "Checkout"
-      }
+      },
+      "googleFonts": [
+        "Montserrat"
+      ]
     },
     "toggle": {
       "styles": {
@@ -2046,16 +2069,26 @@
           "font-family": "Montserrat, sans-serif",
           "background-color": "#89cfc0",
           ":hover": {
-            "background-color": "#7bbaa7"
+            "background-color": "#7bbaad"
           },
           ":focus": {
-            "background-color": "#7bbaa7"
+            "background-color": "#7bbaad"
           }
         },
         "count": {
-          "font-size": "14px"
+          "font-size": "18px",
+          "color": "#000000",
+          ":hover": {
+            "color": "#000000"
+          }
+        },
+        "iconPath": {
+          "fill": "#000000"
         }
-      }
+      },
+      "googleFonts": [
+        "Montserrat"
+      ]
     }
   },
         });
@@ -2108,7 +2141,8 @@
           "text-align": "left"
         },
         "title": {
-          "font-size": "26px"
+          "font-size": "26px",
+          "color": "#F5F5F5"
         },
         "button": {
           "font-family": "Montserrat, sans-serif",
@@ -2131,13 +2165,19 @@
           "padding-bottom": "17px"
         },
         "price": {
-          "font-size": "18px"
+          "font-size": "18px",
+          "color": "#F5F5F5"
         },
         "compareAt": {
-          "font-size": "15.299999999999999px"
+          "font-size": "15.299999999999999px",
+          "color": "#F5F5F5"
         },
         "unitPrice": {
-          "font-size": "15.299999999999999px"
+          "font-size": "15.299999999999999px",
+          "color": "#F5F5F5"
+        },
+        "description": {
+          "color": "#D3D3D3"
         }
       },
       "buttonDestination": "checkout",

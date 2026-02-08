@@ -5937,8 +5937,8 @@ html {
   .popup-content {
     max-width: 300px !important;
     width: calc(100vw - 40px) !important;
-    padding: 25px 20px !important;
-    max-height: 80vh !important;
+    padding: 20px 15px 30px 15px !important;
+    max-height: 90vh !important;
     overflow-y: auto !important;
     display: flex !important;
     flex-direction: column !important;
