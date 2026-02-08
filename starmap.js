@@ -300,8 +300,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const feedImages = [
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1770574099/IMG_5575_6_arzztq.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573877/IMG_5582_hcga6e.jpg',
-    'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118228/IMG_5580_ozbxwx.jpg',
-    'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118693/IMG_5571_jkkhcb.jpg',
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770574456/IMG_3875_pdtaio.jpg',
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770574457/IMG_3930_uwonh6.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573227/IMG_5579_2_mvrkfo.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573226/IMG_5578_2_h7hct6.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573224/IMG_5567_nhwnye.jpg'
