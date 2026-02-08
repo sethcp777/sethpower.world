@@ -5935,13 +5935,22 @@ html {
     max-width: 90% !important;
     width: 90% !important;
     padding: 20px 15px !important;
-    max-height: 70vh !important;
+    max-height: 60vh !important;
     overflow-y: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .popup-form-wrapper {
+    flex-shrink: 0 !important;
+    width: 100% !important;
   }
 
   .popup-form-wrapper iframe {
-    transform: scale(0.85);
+    transform: scale(0.72);
     transform-origin: top center;
+    width: 139% !important;
+    margin-left: -19.5%;
   }
 
   .close-btn {
