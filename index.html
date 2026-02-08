@@ -855,10 +855,20 @@
       </div>
     </footer>
 
-  <!-- Shopify Product Modal -->
-  <div id="shopify-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 10000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;">
-    <div style="position: relative; width: 100%; max-width: 900px; max-height: 90vh; overflow-y: auto; background: #0A0A0A; border: 2px solid #89CFC0; border-radius: 8px; padding: 30px;">
-      <button onclick="document.getElementById('shopify-modal').style.display='none'" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: #89CFC0; font-size: 32px; cursor: pointer; line-height: 1; padding: 0; width: 40px; height: 40px; z-index: 10001;">&times;</button>
+  <!--
+    SHOPIFY PRODUCT MODAL - EXPLORER TEE
+
+    To add this modal to other products:
+    1. Copy this entire modal div section
+    2. Change the modal ID (e.g., "shopify-modal" -> "shopify-modal-windbreaker")
+    3. Change the product component ID (e.g., "product-component-1770576891672" -> "product-component-[NEW_ID]")
+    4. Update the ORDER button onclick to match new modal ID
+    5. Copy and modify the Shopify Buy Button Script below with new product ID
+    6. Update all references in the script to match new IDs
+  -->
+  <div id="shopify-modal" class="shopify-modal-overlay">
+    <div class="shopify-modal-container">
+      <button onclick="document.getElementById('shopify-modal').style.display='none'" class="shopify-modal-close">&times;</button>
       <div id='product-component-1770576891672'></div>
     </div>
   </div>
