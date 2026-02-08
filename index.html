@@ -1121,21 +1121,21 @@
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
       if (window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
+        ShopifyBuyInitSticker();
       } else {
-        loadScript();
+        loadScriptSticker();
       }
     } else {
-      loadScript();
+      loadScriptSticker();
     }
-    function loadScript() {
+    function loadScriptSticker() {
       var script = document.createElement('script');
       script.async = true;
       script.src = scriptURL;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-      script.onload = ShopifyBuyInit;
+      script.onload = ShopifyBuyInitSticker;
     }
-    function ShopifyBuyInit() {
+    function ShopifyBuyInitSticker() {
       var client = ShopifyBuy.buildClient({
         domain: 'a0vqpd-mp.myshopify.com',
         storefrontAccessToken: 'e42f2bebdf1a63db3339639a36c8dbee',
