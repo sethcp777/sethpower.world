@@ -1598,6 +1598,30 @@
   /*]]>*/
   </script>
 
+  <!-- Fix for Shopify modal rendering issue -->
+  <script>
+  // Override the onclick handlers to trigger a resize event for proper Shopify component rendering
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all ORDER buttons that open Shopify modals
+    const orderButtons = document.querySelectorAll('.item-order-btn');
+
+    orderButtons.forEach(function(button) {
+      const originalOnclick = button.getAttribute('onclick');
+      if (originalOnclick && originalOnclick.includes('shopify-modal')) {
+        button.onclick = function() {
+          // Execute the original onclick (show modal)
+          eval(originalOnclick);
+
+          // Small delay then trigger resize to force Shopify components to render
+          setTimeout(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 50);
+        };
+      }
+    });
+  });
+  </script>
+
   <script src="starmap.js"></script>
 </body>
 </html>
