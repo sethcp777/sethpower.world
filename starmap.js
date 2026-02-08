@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Visual Feed Gallery
   const feedImages = [
-    'https://res.cloudinary.com/duynyjs6q/image/upload/v1758120403/IMG_5575_3_k4cbrk.jpg',
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573807/IMG_5575_4_itwjgj.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118683/IMG_5577_do1jla.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118228/IMG_5580_ozbxwx.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118693/IMG_5571_jkkhcb.jpg',
