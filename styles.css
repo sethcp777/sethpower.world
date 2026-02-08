@@ -2056,11 +2056,12 @@ html {
 
 .popup-content {
   position: relative;
-  padding: 15px;
+  padding: 30px 25px;
   background: rgba(41, 41, 41, 0.95);
   border: 1px solid rgba(137, 207, 192, 0.3);
   border-radius: 4px;
-  max-width: 480px;
+  max-width: 340px;
+  width: 100%;
   text-align: center;
 }
 
@@ -5934,10 +5935,10 @@ html {
      ======================================== */
 
   .popup-content {
-    max-width: 90% !important;
-    width: 90% !important;
-    padding: 20px 15px !important;
-    max-height: 60vh !important;
+    max-width: 300px !important;
+    width: calc(100vw - 40px) !important;
+    padding: 25px 20px !important;
+    max-height: 70vh !important;
     overflow-y: auto !important;
     display: flex !important;
     flex-direction: column !important;
@@ -5946,13 +5947,13 @@ html {
   .popup-form-wrapper {
     flex-shrink: 0 !important;
     width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .popup-form-wrapper iframe {
-    transform: scale(0.72);
-    transform-origin: top center;
-    width: 139% !important;
-    margin-left: -19.5%;
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   .close-btn {
