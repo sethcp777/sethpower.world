@@ -302,7 +302,9 @@ document.addEventListener('DOMContentLoaded', function() {
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118683/IMG_5577_do1jla.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118228/IMG_5580_ozbxwx.jpg',
     'https://res.cloudinary.com/duynyjs6q/image/upload/v1758118693/IMG_5571_jkkhcb.jpg',
-    'https://res.cloudinary.com/duynyjs6q/image/upload/v1758120441/IMG_5475_rfjlh1.jpg'
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573227/IMG_5579_2_mvrkfo.jpg',
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573226/IMG_5578_2_h7hct6.jpg',
+    'https://res.cloudinary.com/duynyjs6q/image/upload/v1770573224/IMG_5567_nhwnye.jpg'
   ];
   
   const fallbackImage = './Downloads/seth-portrait.jpg';
