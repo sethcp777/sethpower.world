@@ -2063,6 +2063,8 @@ html {
   max-width: 340px;
   width: 100%;
   text-align: center;
+  min-height: 360px;
+  max-height: 420px;
 }
 
 .close-btn {
@@ -5937,11 +5939,13 @@ html {
   .popup-content {
     max-width: 300px !important;
     width: calc(100vw - 40px) !important;
-    padding: 20px 15px 30px 15px !important;
-    max-height: 90vh !important;
-    overflow-y: auto !important;
+    padding: 20px 15px 40px 15px !important;
+    min-height: 380px !important;
+    max-height: none !important;
+    overflow-y: visible !important;
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center !important;
   }
 
   .popup-form-wrapper {
@@ -5949,11 +5953,12 @@ html {
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
   }
 
   .popup-form-wrapper iframe {
-    max-width: 100% !important;
-    height: auto !important;
+    width: 261px !important;
+    height: 289px !important;
   }
 
   .close-btn {
