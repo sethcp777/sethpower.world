@@ -216,11 +216,8 @@ document.addEventListener('DOMContentLoaded', function() {
         position: fixed;
         left: ${playerX}%;
         bottom: ${playerY}%;
-        transform: translate3d(-50%, 50%, 0) rotate(${currentRocketRotation}deg);
+        transform: translate(-50%, 50%) rotate(${currentRocketRotation}deg);
         z-index: 9999;
-        will-change: transform;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
       `;
       
       // Update coordinate displays
@@ -243,11 +240,8 @@ document.addEventListener('DOMContentLoaded', function() {
       position: fixed;
       left: ${playerX}%;
       bottom: ${playerY}%;
-      transform: translate3d(-50%, 50%, 0) rotate(0deg);
+      transform: translate(-50%, 50%) rotate(0deg);
       z-index: 9999;
-      will-change: transform;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
     `;
     
     const gridX = coordUtils.screenToGameX(playerX);
