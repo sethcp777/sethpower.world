@@ -1393,9 +1393,11 @@ html {
   width: 21px;
   height: 29px;
   z-index: 9999;
-  transition: all 0.5s ease;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   filter: drop-shadow(0 0 4px rgba(64, 224, 208, 0.7));
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .player::after {
