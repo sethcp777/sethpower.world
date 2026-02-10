@@ -5559,6 +5559,17 @@ html {
     animation: none !important;
   }
 
+  /* Make hero background pure black on mobile to match other sections */
+  .screen {
+    background: #000000 !important;
+    background-image: none !important;
+  }
+
+  .screen::before,
+  .screen::after {
+    opacity: 0 !important;
+  }
+
   /* Hero logo - steady glow instead of pulsing */
   .hero-logo {
     animation: none !important;
