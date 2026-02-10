@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentRocketRotation = 0;
   
   // Constants
-  const MOVEMENT_SPEED = 2.0;
+  const MOVEMENT_SPEED = 2.5;
   const MOVEMENT_KEYS = ['w', 's', 'a', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
   
   // Coordinate conversion utilities
