@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmission Received - Seth Power</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      font-family: 'Courier New', monospace;
+      color: #F5F5F5;
+      overflow-x: hidden;
+    }
+
+    .thank-you-screen {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      background: #000000;
+    }
+
+    /* Subtle star background */
+    .thank-you-screen::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 60% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 50%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, white, transparent),
+        radial-gradient(1px 1px at 33% 80%, white, transparent),
+        radial-gradient(1px 1px at 15% 70%, white, transparent);
+      background-repeat: no-repeat;
+      background-size: 200% 200%;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .terminal-container {
+      max-width: 600px;
+      width: 100%;
+      background: rgba(10, 15, 10, 0.95);
+      border: 3px solid #89CFC0;
+      border-radius: 8px;
+      padding: 40px 30px;
+      box-shadow:
+        0 0 20px rgba(137, 207, 192, 0.3),
+        inset 0 0 60px rgba(137, 207, 192, 0.05);
+      position: relative;
+      z-index: 1;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+
+    .status-light {
+      width: 12px;
+      height: 12px;
+      background: #89CFC0;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #89CFC0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .status-text {
+      font-size: 11px;
+      color: #89CFC0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .message-header {
+      font-size: 36px;
+      color: #89CFC0;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 0 0 20px rgba(137, 207, 192, 0.5);
+    }
+
+    .message-content {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .message-line {
+      font-size: 14px;
+      color: #B5C4B1;
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    .message-line.highlight {
+      color: #89CFC0;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .return-button {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      background: transparent;
+      border: 2px solid #89CFC0;
+      color: #89CFC0;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(137, 207, 192, 0.2);
+    }
+
+    .return-button:hover {
+      background: #89CFC0;
+      color: #0A0A0A;
+      box-shadow: 0 0 20px rgba(137, 207, 192, 0.5);
+    }
+
+    .terminal-footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 11px;
+      color: #5C7B7C;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .terminal-container {
+        padding: 30px 20px;
+      }
+
+      .message-header {
+        font-size: 28px;
+        letter-spacing: 2px;
+      }
+
+      .message-line {
+        font-size: 13px;
+      }
+
+      .return-button {
+        font-size: 13px;
+        padding: 14px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-screen">
+    <div class="terminal-container">
+      <div class="status-indicator">
+        <div class="status-light"></div>
+        <div class="status-text">System Active</div>
+      </div>
+
+      <h1 class="message-header">Transmission<br>Received</h1>
+
+      <div class="message-content">
+        <p class="message-line">Your message has been successfully logged</p>
+        <p class="message-line">Coordinates locked and verified</p>
+        <p class="message-line">Signal strength: Maximum</p>
+        <p class="message-line highlight">Response inbound...</p>
+      </div>
+
+      <a href="index.html" class="return-button">Return to Base</a>
+
+      <div class="terminal-footer">
+        SOLVARA PRIME STAR SYSTEM // UNIT 003
+      </div>
+    </div>
+  </div>
+</body>
+</html>
