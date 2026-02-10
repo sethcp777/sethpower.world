@@ -5823,6 +5823,20 @@ html {
      CONTACT SECTION (TRANSMISSION TERMINAL) - MOBILE
      ======================================== */
 
+  .contact-section {
+    padding: 60px 20px 60px !important;
+  }
+
+  .contact-header {
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .contact-subheader {
+    font-size: 12px !important;
+    margin-bottom: 30px !important;
+  }
+
   .contact-container {
     padding: 20px 10px !important;
   }
@@ -5844,7 +5858,7 @@ html {
 
   .monitor-screen {
     height: auto !important;
-    min-height: auto !important;
+    min-height: 550px !important;
     max-height: none !important;
     overflow-y: visible !important;
     -webkit-overflow-scrolling: touch !important;
